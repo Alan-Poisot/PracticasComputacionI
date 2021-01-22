@@ -6,7 +6,7 @@ Se implementó el algoritmo de Gauss-Jordan C++ y Python (Sin usar librerías y 
 Para comparar el rendimiento en los distintos lenguajes, los programas generaban una matriz aleatoria con números flotantes con valores entre -100 y 100. 
 Posteriormente se cronometró el tiempo que tardaba en ejecutarse el algoritmo en cuestión usando las librerías `chrono` para C++ y `time` para python.
 
-Posteriormente los datos obtenidos se tabularon y se obtuvieron dos gráficas:
+Para mimimizar el impacto de las diversas variables que afectan el tiempo de ejecución de los programas, estos se corrieron 3 veces con cada tamaño de sistema (10,100,500 y 1000 variables) en la misma computadora. Posteriormente se calculó el promedio de las 3 mediciones; los datos obtenidos se tabularon y se obtuvieron dos gráficas:
 
 En la primer gráfica se puede observar que el uso de la librería `Numpy` casi no afecta el rendimiento del script de Python, aunque sí lo hace ligeramente más lento que sin usar ninguna librería.
 Adicionalmente, se puede ver que el programa escrito en C++ es mucho más rápido, pues parece una línea horizontal cercana al cero.
